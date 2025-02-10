@@ -1,6 +1,6 @@
 import SignUp from "./components/signup";
 import Login from "./components/login";
-import { Route,Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./components/home";
 import Porto from "./components/porto";
 import Install from "./components/install";
