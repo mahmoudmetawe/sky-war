@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import SignUp from "./components/signup";
+import Login from "./components/login";
+import { Route, Routes } from "react-router-dom";
+import Home from "./components/home";
+import Porto from "./components/porto";
+import Install from "./components/install";
+import Support from "./components/support";
+import CallUs from "./components/callus";
+import Dashboard from "./components/dashboard";
+import Users from "./components/users";
+import UserUpdate from "./components/UserUpdate";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<SignUp />} />
+        <Route path="/porto" element={<Porto />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/Porto" element={<Porto />} />
+        <Route path="/install" element={<Install />} />
+        <Route path="/support" element={<Support />} />
+        <Route path="/callus" element={<CallUs />} />
+
+        {/* dashboard cods....................................................  */}
+        <Route path="/dashboard" element={<Dashboard />}>
+          <Route path="users" element={<Users />} />
+          <Route path="users/:id" element={<UserUpdate />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
 
