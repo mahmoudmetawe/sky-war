@@ -101,9 +101,8 @@ body{
 }
 .nav-container .nav .link a:hover{
     border-radius: 10px;
-    box-shadow: 0 10px 10px 0px rgb(185, 185, 185);
-    border-bottom: 1px solid gray;
-    scale: 1.05;
+    box-shadow: 0 7px 10px 0px var(--color-logo);
+
 }
 .nav-container .nav button{
     width: 80px;

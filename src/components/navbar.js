@@ -3,7 +3,7 @@ import "./signup.css"
 export default function Navbar() {
     function LogOut() {
         window.localStorage.removeItem('email');
-        window.location.pathname = './home.js'
+        window.location.pathname = './'
     }
     return(
         <div className="nav-container">
