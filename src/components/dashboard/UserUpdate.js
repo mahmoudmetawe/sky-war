@@ -1,6 +1,6 @@
 import { useState,useEffect } from "react";
-import "./signup.css";
-import Form from "./register";
+import "../signup.css";
+import Form from "../register";
 
 
 export default function UserUpdate() {
@@ -20,7 +20,7 @@ export default function UserUpdate() {
 
   return (
 
-    <div>
+    <div className="dashboard-content updateuser">
       <Form button="Update" username={username} email={email} endpoint= {`user/update/${ID}`}  location = {`./dashboard/users`} haslocalstorage = {false}/>
     </div>
     

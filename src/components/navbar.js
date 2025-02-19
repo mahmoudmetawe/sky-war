@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import "./signup.css"
 export default function Navbar() {
     function LogOut() {
@@ -12,11 +12,11 @@ export default function Navbar() {
                     <img src={require("../logo.png")} alt="logo"/>
                 </div>
                 <div className="link">
-                <Link to="/" >Home</Link>
-                <Link to="/Porto" >Portofolio</Link>
-                <Link to="/install" >installation</Link>
-                <Link to="/support" >support</Link>
-                <Link to="/callus" >call us</Link>
+                <NavLink activeClassName = "acive" to="/" >Home</NavLink>
+                <NavLink activeClassName = "acive" to="/Porto" >Portofolio</NavLink>
+                <NavLink activeClassName = "acive" to="/install" >installation</NavLink>
+                <NavLink activeClassName = "acive" to="/support" >support</NavLink>
+                <NavLink activeClassName = "acive" to="/callus" >call us</NavLink>
                 </div>
                 
                 {!window.localStorage.getItem('email') ? <div>

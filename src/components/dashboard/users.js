@@ -1,6 +1,6 @@
-import "../all.min.css"
-import '../all.css'
-import "./dashboard.css"
+import "/home/dev-metaw3/Desktop/project/projects/sky-war/src/all.min.css"
+import '/home/dev-metaw3/Desktop/project/projects/sky-war/src/all.css'
+import './dashboard.css'
 import {useEffect, useState } from "react";
 import { Link } from "react-router-dom"
 import axios from "axios";
@@ -55,7 +55,7 @@ const [refreshuser , setrefreshUser] = useState([])
   })
   
   return (
-      <div className="table">
+      <div className="dashboard-content">
         <table>
           <tr>
             <th>id</th>

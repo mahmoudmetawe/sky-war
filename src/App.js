@@ -6,9 +6,10 @@ import Porto from "./components/porto";
 import Install from "./components/install";
 import Support from "./components/support";
 import CallUs from "./components/callus";
-import Dashboard from "./components/dashboard";
-import Users from "./components/users";
-import UserUpdate from "./components/UserUpdate";
+import Dashboard from "./components/dashboard/dashboard";
+import Users from "./components/dashboard/users";
+import UserUpdate from "./components/dashboard/UserUpdate";
+import AddUser from "./components/dashboard/adduser";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />}>
           <Route path="users" element={<Users />} />
           <Route path="users/:id" element={<UserUpdate />} />
+          <Route path="adduser" element={<AddUser/>}/>
         </Route>
       </Routes>
     </>

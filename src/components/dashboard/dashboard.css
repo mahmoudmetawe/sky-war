@@ -1,0 +1,81 @@
+:root{
+    --color-logo  :#55bed4;
+}
+.dashboard{
+    display: flex;
+    width: 98%;
+    margin: auto;
+}
+
+
+/*.............................................side bar in dashboard......................................................*/
+.sidebar{
+    width: 12%;
+    height: 100dvh;
+    display: flex;
+    border-radius:10px ;
+    margin: 10px 10px 10px 0;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    padding-left: 15PX;
+    overflow: hidden;
+
+
+}
+
+.sidebar a{
+    width:100%;
+    padding: 20px;
+    font-size: larger;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+.sidebar a i{
+    padding-right: 40px;
+}
+.sidebar a:hover{
+    background-color:var(--color-logo);
+    color: white;
+    font-weight: 700; 
+}
+.active{
+    background-color:var(--color-logo);
+}
+
+/* .......................right side in dashboard........................................................................*/
+.dashboard-content{
+    width: 87%;
+    margin:10px 0 10px 0;
+    border-radius: 10px;
+    background-color: white;
+
+    
+}
+table{
+    border-collapse: collapse;
+    width: 90%;
+    height: max-content;
+    text-align: center;
+    margin: 20px auto;
+}
+table th {
+    background-color: var(--color-logo);
+}
+tr:nth-child(odd){
+    background-color: rgb(229, 229, 229);
+}
+table th,td{
+    padding: 10px 0;
+    border:1px solid black ;
+}
+i{
+    transition:0.5s;
+}
+i:hover {
+scale: 1.1;
+}
+
+
+
